@@ -2,10 +2,9 @@
 
 /*
  * appearance
- *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "FiraCode Nerd Font:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -92,6 +91,9 @@ char *termname = "st-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 8;
+
+/* bg opacity */
+float alpha = 0.6;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -451,6 +453,7 @@ static Key key[] = {
 	{ XK_F33,           XK_NO_MOD,      "\033[20;5~",    0,    0},
 	{ XK_F34,           XK_NO_MOD,      "\033[21;5~",    0,    0},
 	{ XK_F35,           XK_NO_MOD,      "\033[23;5~",    0,    0},
+	{ ControlMask,      XK_g,           "g\r",           0,    0},
 };
 
 /*
