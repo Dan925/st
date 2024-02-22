@@ -6,7 +6,7 @@ st is a simple terminal emulator for X which sucks less.
 Requirements
 ------------
 In order to build st you need the Xlib header files.
-
+For arch run: `sudo pacman -S libx11 libxft libxinerama`
 
 Installation
 ------------
